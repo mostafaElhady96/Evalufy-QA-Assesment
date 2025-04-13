@@ -1,0 +1,14 @@
+{
+  "name": "evalufy-qa-assesment",
+  "version": "1.0.0",
+  "description": "automation assesment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mostafa Elhady",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^14.3.0"
+  }
+}
