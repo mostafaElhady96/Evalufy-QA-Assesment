@@ -14,9 +14,10 @@ describe('Evalufy QA Assesment tests', () => {
   it('End to End ', () => {
     page.enterFirstName('Mostafa')
     page.enterLastName('Elhady')
+    // I used here random email
     const randomEmail = `testuser_${Math.random().toString(36).substring(2, 10)}@gmail.com`
-
     page.enterEmail(randomEmail)
+
     page.clickStartButton() 
     
     page.checkTermsAndConditions()
@@ -37,7 +38,7 @@ describe('Evalufy QA Assesment tests', () => {
     page.answerFourthQuestion('i am software test Engineer')
     page.clickNextButton()
     
-    // i want to choose a date more dynamic by using for loop but i was limited by the time
+    // I want to choose a date more dynamic by using for loop but i was limited by the time
     cy.get('input[aria-label="Choose a Date"]').click()
     cy.contains('15').click({force:true})
     page.clickNextButton()
